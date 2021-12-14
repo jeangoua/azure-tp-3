@@ -20,7 +20,7 @@ try {
     }
     
 } catch(PDOexeption $e) {
-    echo $e->getmessage();
+    //echo $e->getmessage();
 }
 
 ?>
