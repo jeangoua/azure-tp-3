@@ -1,15 +1,9 @@
 <?php 
 echo "BIENVENUE\n";
 echo "\nC'est une page php";
-echo "\n1";
+echo "\n2";
 
-$db = new PDO(
-    'mysql:host=bdd-mysql.mysql.database.azure.com;dbname=Bikes;charset=utf8',
-    'jgoua@bdd-mysql',
-    'P@ssword24330'
-);
-
-            $servername = 'bdd-mysql.mysql.database.azure.comhost';
+            $servername = 'bdd-mysql.mysql.database.azure.com';
             $username = 'jgoua@bdd-mysql';
             $password = 'P@ssword24330';
             
