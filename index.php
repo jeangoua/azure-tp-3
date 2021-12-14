@@ -10,6 +10,9 @@ $recipesStatement = $db->prepare('SELECT * FROM recipes');
 $recipesStatement->execute();
 $recipes = $recipesStatement->fetchAll();
 
+foreach ($recipes as $recipe) {
+    echo $recipe;
+}
 
     echo "BIENVENUE";
     echo "C'est une page php";
