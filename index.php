@@ -15,8 +15,9 @@ try {
     foreach($db->exec('SELECT * FROM Ebike') as $row) {
         echo $row['name'];
     }
-} catch($e) {
- var_dump($e);
+    
+} catch(PDOexeption $e) {
+    echo $e->getmessage();
 }
 
 ?>
