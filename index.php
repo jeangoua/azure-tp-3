@@ -5,14 +5,18 @@ echo "\n1";
 
 $user = 'jgoua@bdd-mysql';
 $password = 'P@assword24330';
-
-$db = new PDO(
-    'mysql:host=bdd-mysql.mysql.database.azure.com;dbname=bikes;charset=utf8',
-    $user,
-    $password
-);
-
-foreach($db->exec('SELECT * FROM Ebike') as $row) {
-    echo $row['name'];
+try {
+    $db = new PDO(
+        'mysql:host=bdd-mysql.mysql.database.azure.com;dbname=bikes;charset=utf8',
+        $user,
+        $password
+    );
+    
+    foreach($db->exec('SELECT * FROM Ebike') as $row) {
+        echo $row['name'];
+    }
+} catch($e) {
+ var_dump($e);
 }
+
 ?>
