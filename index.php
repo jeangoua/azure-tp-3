@@ -2,7 +2,7 @@
 try
    {
       // On se connecte à MySQL
-      $mysqlClient = new PDO('mysql:host=bdd-mysql.mysql.database.azure.com;dbname=bikes;charset=utf8', 'jgoua', 'P@assword24330');
+      $mysqlClient = new PDO('mysql:host=bdd-mysql.mysql.database.azure.com;dbname=bikes;charset=utf8', 'jgoua@bdd-mysql', 'P@ssword24330');
    }
    catch(Exception $e)
    {
