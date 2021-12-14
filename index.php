@@ -9,7 +9,9 @@ $db = new PDO(
 $recipesStatement = $db->prepare('SELECT * FROM recipes');
 $recipesStatement->execute();
 $recipes = $recipesStatement->fetchAll();
+
 var_dump($recipes);
+
 foreach ($recipes as $recipe) {
     echo $recipe;
 }
