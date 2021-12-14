@@ -14,6 +14,6 @@ foreach ($recipes as $recipe) {
     echo $recipe;
 }
 
-    echo "BIENVENUE";
+    echo "BIENVENUE\n";
     echo "C'est une page php";
 ?>
