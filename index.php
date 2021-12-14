@@ -17,7 +17,8 @@ echo "\n2";
                 echo 'Connexion réussie';
             }
             
-
+            $result = $conn->query("SELECT * FROM Ebike");
+            var_dump($result);
 // var_dump($recipes);
 
 
