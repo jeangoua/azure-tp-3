@@ -1,7 +1,7 @@
 <?php 
 echo "BIENVENUE\n";
 echo "\nC'est une page php";
-echo "\n2";
+echo "\n3";
 
             $servername = 'bdd-mysql.mysql.database.azure.com';
             $username = 'jgoua@bdd-mysql';
@@ -17,7 +17,11 @@ echo "\n2";
                 echo 'Connexion réussie';
             }
             
-            $result = $conn->query("SELECT * FROM Ebike");
+            $req = $conn->mysql_query("SELECT * FROM Ebike");
+            while($data = mysql_fetch_assoc($req)){
+                // on affiche les informations de l'enregistrement en cours
+                echo '<b>'.$data['id'].' '.$data['name'].'</b> ('.$data['price'].')';
+                }
             var_dump($result);
 // var_dump($recipes);
 
