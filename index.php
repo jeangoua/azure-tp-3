@@ -1,4 +1,7 @@
 <?php 
+ini_set('error_reporting', 1);
+ini_set('display_error', 1);
+
 echo "BIENVENUE\n";
 echo "\nC'est une page php";
 echo "\n1";
