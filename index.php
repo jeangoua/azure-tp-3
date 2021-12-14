@@ -9,7 +9,7 @@ $db = new PDO(
     'P@ssword24330'
 );
 
-            $servername = 'localbdd-mysql.mysql.database.azure.comhost';
+            $servername = 'bdd-mysql.mysql.database.azure.comhost';
             $username = 'jgoua@bdd-mysql';
             $password = 'P@ssword24330';
             
